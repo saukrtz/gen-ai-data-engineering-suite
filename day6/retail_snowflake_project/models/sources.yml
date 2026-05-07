@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: day6_genv2
+    schema: f1stv2
+    tables:
+      - name: ordersv2
+      - name: customersv2
+      - name: productsv2

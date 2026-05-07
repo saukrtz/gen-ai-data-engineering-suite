@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DAY6_GEN
+    schema: F1ST
+    tables:
+      - name: customers
+      - name: products
+      - name: orders

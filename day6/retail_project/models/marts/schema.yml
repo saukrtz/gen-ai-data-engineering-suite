@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fact_sales
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id

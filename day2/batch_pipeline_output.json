@@ -1,0 +1,23 @@
+[
+  {
+    "task": "Top 3 customers",
+    "snowflake_query": "SELECT c.name, COUNT(o.order_id) as num_orders, SUM(o.amount) as total_revenue FROM orders o JOIN customers c ON o.customer_id = c.customer_id GROUP BY c.customer_id, c.name ORDER BY total_revenue DESC LIMIT 3",
+    "explanation": "This query joins the orders and customers tables on the customer_id column, groups the results by customer, and counts the number of orders and calculates the total revenue for each customer. It then sorts the results by total revenue in descending order, and finally selects the top 3 customers with the highest total revenue.",
+    "status": "success",
+    "tokens_used": 331
+  },
+  {
+    "task": "Total revenue by region",
+    "snowflake_query": "SELECT C.region, SUM(O.amount) AS total_revenue FROM orders O JOIN customers C ON O.customer_id = C.customer_id GROUP BY C.region ORDER BY total_revenue DESC;",
+    "explanation": "This Snowflake query joins the 'orders' table with the 'customers' table based on the 'customer_id' column to combine customer information with order data. It then groups the results by customer region, calculates the total revenue for each region by summing up the 'amount' column, and finally orders the results in descending order by total revenue.",
+    "status": "success",
+    "tokens_used": 324
+  },
+  {
+    "task": "Daily sales trend",
+    "snowflake_query": "",
+    "explanation": "JSON parse error. Raw: {\n  \"snowflake_query\": \"SELECT o.order_id, o.order_date, c.name, p.product_name, o.amount \n                      FROM orders o \n                      LEFT JOIN customers c ON o.customer_id = c.custome",
+    "status": "json_error",
+    "tokens_used": 0
+  }
+]

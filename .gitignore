@@ -1,0 +1,21 @@
+# Ignore sensitive credentials
+.env
+*.env
+auth.json
+
+# Ignore Python environment and cache
+__pycache__/
+*.pyc
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Ignore dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# Ignore system files
+.DS_Store
+Thumbs.db

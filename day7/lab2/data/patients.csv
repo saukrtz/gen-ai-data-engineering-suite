@@ -1,0 +1,7 @@
+patient_id,name,age,diagnosis,visit_date,billing_amount,hospital_id
+1,Alice,30,Diabetes,2024-01-01,200,HOSP_001
+2,Bob,45,Cardiac,2024-01-01,500,HOSP_002
+3,Charlie,,Diabetes,2024-01-02,300,HOSP_001
+3,Charlie,,Diabetes,2024-01-02,300,HOSP_001
+4,David,50,Cardiac,2024-01-03,,HOSP_003
+5,Eve,28,Flu,2024-01-04,150,HOSP_002

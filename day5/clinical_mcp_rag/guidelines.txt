@@ -1,0 +1,13 @@
+Hypertension:
+- BP > 140 indicates Stage 1 Hypertension
+- Treatment:
+  • Lifestyle changes (diet, exercise)
+  • ACE inhibitors or beta blockers
+
+Prehypertension:
+- BP between 120–139
+- Monitor regularly
+
+Normal BP:
+- BP < 120
+- Maintain healthy lifestyle

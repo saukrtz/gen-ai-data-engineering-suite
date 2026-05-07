@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: fact_v2_sales
+    description: "AI-generated fact table for retail sales."
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_v2_customer')
+              field: customer_id
+
+  - name: dim_v2_customer
+    description: "AI-generated dimension table for customers."
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique

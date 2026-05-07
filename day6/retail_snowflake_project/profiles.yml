@@ -1,0 +1,14 @@
+retail_snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: JGZAFOP-MJ33102
+      user: DREAM
+      password: Sigmoid@202669
+      role: ACCOUNTADMIN  # Assuming accountadmin or a role with create database permission
+      database: DAY6_GENV2
+      warehouse: COMPUTE_WH
+      schema: F1STV2
+      threads: 1
+      client_session_keep_alive: False

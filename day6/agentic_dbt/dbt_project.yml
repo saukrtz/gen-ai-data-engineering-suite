@@ -1,0 +1,16 @@
+name: 'agentic_retail_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'retail_project' # We'll reuse the existing profile but override the schema
+
+model-paths: ["models"]
+
+models:
+  agentic_retail_project:
+    staging:
+      +materialized: view
+      +schema: agentic_stg
+    marts:
+      +materialized: table
+      +schema: agentic_marts

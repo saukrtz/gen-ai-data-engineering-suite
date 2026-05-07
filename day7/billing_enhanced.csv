@@ -1,0 +1,5 @@
+diagnosis,hospital_id,billing_amount
+Cardiac,HOSP_002,500.0
+Cardiac,HOSP_003,0.0
+Diabetes,HOSP_001,500.0
+Flu,HOSP_002,150.0

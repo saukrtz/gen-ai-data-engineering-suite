@@ -1,0 +1,16 @@
+name: 'lab_optimization'
+version: '1.0.0'
+config-version: 2
+
+profile: 'retail_project' # Reuse existing Snowflake profile
+
+model-paths: ["models"]
+
+models:
+  lab_optimization:
+    staging:
+      +materialized: view
+      +schema: lab_stg
+    marts:
+      +materialized: table
+      +schema: lab_marts

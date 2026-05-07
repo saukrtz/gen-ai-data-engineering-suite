@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fact_customer_revenue
+    description: "Model tracking revenue per customer and category. Expected to fail if customer_id is NULL."
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+
+      - name: category
+        tests:
+          - not_null
+
+      - name: total_revenue
+        tests:
+          - not_null
