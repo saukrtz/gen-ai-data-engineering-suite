@@ -54,10 +54,10 @@ def analyze_failures_with_ai(report_path):
         
         try:
             completion = client.chat.completions.create(
-                model="llama3-8b-8192",
+                model="llama-3.1-8b-instant",
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.2,
-                max_tokens=300
+                temperature=0.5,
+                max_tokens=200
             )
             ai_insight = completion.choices[0].message.content.strip()
             
