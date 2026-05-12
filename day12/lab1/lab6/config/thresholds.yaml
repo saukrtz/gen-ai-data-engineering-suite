@@ -1,0 +1,23 @@
+# Data Quality Threshold Configuration
+# Thresholds are in percentages (0-100)
+
+monitoring_rules:
+  - column: "revenue"
+    metric: "null_rate"
+    threshold: 5.0
+    severity: "CRITICAL"
+  
+  - column: "customer_id"
+    metric: "null_rate"
+    threshold: 2.0
+    severity: "CRITICAL"
+  
+  - column: "region"
+    metric: "null_rate"
+    threshold: 10.0
+    severity: "WARNING"
+
+  - column: "transaction_date"
+    metric: "null_rate"
+    threshold: 0.1
+    severity: "CRITICAL"
